@@ -1,0 +1,59 @@
+name: "publish-release"
+
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  npm-publish:
+    name: "Publish"
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      ### Calculate FINAL_VERSION
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get --yes --force-yes install jq
+
+      - name: Get version from npm and increment
+        run: |
+          yarn global add semver
+          PATH="$(yarn global bin):$PATH"
+          LOCAL_VERSION="$(cat package.json | jq .version)"
+          PKG_NAME="$(cat package.json | jq .name)"
+          NPM_VERSION="$(yarn info --silent "$PKG_NAME" version || true)"
+          MAX_VERSION="$(semver "$LOCAL_VERSION" "$NPM_VERSION" "0.0.0" | tail -n1)"
+          FINAL_VERSION="$(semver --increment patch "$MAX_VERSION")"
+          echo "FINAL_VERSION=$FINAL_VERSION" | tee -a $GITHUB_ENV
+
+      ### Set version
+      - name: Set version to ${{ env.FINAL_VERSION }}
+        run: yarn version --new-version ${{ env.FINAL_VERSION }} --no-git-tag-version
+
+      ### Publish to NPM
+      - uses: JS-DevTools/npm-publish@v1
+        with:
+          package: package.json
+          access: public
+          check-version: false
+          token: ${{ secrets.NPM_TOKEN }}
+
+      ### Create a pre-release
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ env.FINAL_VERSION }}
+          release_name: Fluence Network ${{ env.FINAL_VERSION }}
+          body: |
+            ${{ steps.publish.outputs }}
+          draft: true
+#          prerelease: false

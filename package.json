@@ -1,7 +1,7 @@
 {
-  "name": "fluence-network-environment",
-  "version": "0.1.0",
-  "description": "the browser js-libp2p client for the Fluence network",
+  "name": "@fluencelabs/fluence-network-environment",
+  "version": "1.0.0",
+  "description": "Fluence network environments addresses",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
   "scripts": {
@@ -13,5 +13,6 @@
   "dependencies": {},
   "devDependencies": {
     "typescript": "3.9.5"
-  }
+  },
+  "private": false
 }
