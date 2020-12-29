@@ -36,13 +36,16 @@ jobs:
       - name: Set version to ${{ env.FINAL_VERSION }}
         run: yarn version --new-version ${{ env.FINAL_VERSION }} --no-git-tag-version
 
-      ### Publish to NPM
-      - uses: JS-DevTools/npm-publish@v1
+      ### Publish to NPM registry
+      - uses: actions/setup-node@v1
         with:
-          package: package.json
-          access: public
-          check-version: false
-          token: ${{ secrets.NPM_TOKEN }}
+          node-version: '14'
+          registry-url: 'https://registry.npmjs.org'
+
+      - run: npm publish --access public
+        working-directory: pkg
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       ### Create a pre-release
       - name: Create Release
