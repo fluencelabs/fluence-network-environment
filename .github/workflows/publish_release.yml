@@ -28,7 +28,7 @@ jobs:
           PATH="$(yarn global bin):$PATH"
 
           # take npm version and increment it
-          PKG_NAME="$(cat package.json | jq .name)"
+          PKG_NAME="$(cat package.json | jq -r .name)"
           NPM_VERSION="$(yarn info --silent "$PKG_NAME" version || true)"
           NEXT_NPM_VERSION="$(semver --increment patch "$NPM_VERSION")"
 
