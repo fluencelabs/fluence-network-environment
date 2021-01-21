@@ -66,11 +66,6 @@ Fluence is an open application platform where apps can build on each other, shar
 
 
 
-
-## Contributing
-
-While the project is a still in the early stage of development, you are welcome to track progress and contribute. At the current moment we don't have detailed instructions on how to join development or which code guidelines to follow. However, you can expect more info to appear soon enough. In the meanwhile, check out the [basic contributing rules](https://github.com/fluencelabs/fluence/blob/trustless_computing/CONTRIBUTING.md).
-
 ## License
 
 [Apache 2.0](https://github.com/fluencelabs/fluence/blob/trustless_computing/LICENSE.md)
