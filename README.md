@@ -46,7 +46,7 @@ const client = await createClient(relayNode);
 
 Environment primarily used for staging deployments of various Fluence services.
 
-### FaaS Net
+### TestNet
 
 The main Fluence network. It consists of a ten nodes each running on a separate physical host.
 
