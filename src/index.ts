@@ -54,7 +54,7 @@ export const dev: Node[] = [
     },
 ];
 
-export const TestNet: Node[] = [
+export const testNet: Node[] = [
     {
         multiaddr: '/dns4/net01.fluence.dev/tcp/19001/wss/p2p/12D3KooWEXNUbCXooUwHrHBbrmjsrpHXoEphPwbjQXEGyzbqKnE9',
         peerId: '12D3KooWEXNUbCXooUwHrHBbrmjsrpHXoEphPwbjQXEGyzbqKnE9',
