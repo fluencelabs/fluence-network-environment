@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Haskell Tool Stack" project-jdk-type="Haskell Tool Stack SDK" />
+  <component name="SbtLocalSettings">
+    <option name="modificationStamps">
+      <map>
+        <entry key="$USER_HOME$/Development/server" value="1484841043000" />
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$USER_HOME$/Development/autotest" value="PREVIEW" />
+        <entry key="$USER_HOME$/Development/dataengine" value="PREVIEW" />
+        <entry key="$USER_HOME$/Development/ethberlin-solidity-dsl" value="PREVIEW" />
+        <entry key="$USER_HOME$/Development/fluence" value="PREVIEW" />
+        <entry key="$USER_HOME$/Development/fluencelabs/crypto" value="PREVIEW" />
+        <entry key="$USER_HOME$/Development/fluencelabs/fluence-main" value="PREVIEW" />
+        <entry key="$USER_HOME$/Development/forks/fluence" value="PREVIEW" />
+        <entry key="$USER_HOME$/Development/hackethberlin" value="PREVIEW" />
+        <entry key="$USER_HOME$/Development/server_clean" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="ScalaSbtSettings">
+    <option name="customVMEnabled" value="true" />
+    <option name="customVMPath" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home" />
+    <option name="maximumHeapSize" value="4096" />
+    <option name="vmParameters" value="-XX:MaxPermSize=2G" />
+  </component>
+  <component name="ThriftCompiler">
+    <compilers />
+  </component>
+</project>
