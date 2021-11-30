@@ -57,7 +57,7 @@ Fluence is an open application platform where apps can build on each other, shar
 |       Topology        | [TrustGraph](https://github.com/fluencelabs/fluence/tree/master/trust-graph), [DHT\*](https://github.com/fluencelabs/rust-libp2p) | Distributed with Kademlia\* algo |    Actual state of the network    |       [libp2p](https://github.com/libp2p/rust-libp2p)        |
 | Security & Accounting |                          Blockchain                          |          Whole network           |        Licenses & payments        |                          substrate?                          |
 
-<img alt="aquamarine scheme" align="center" src="doc/stack.png"/>
+<img alt="aquamarine scheme" align="center" src="doc/image.png"/>
 
 
 
