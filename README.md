@@ -2,7 +2,7 @@
 
 [![npm](https://img.shields.io/npm/v/@fluencelabs/fluence-network-environment)](https://www.npmjs.com/package/@fluencelabs/fluence-network-environment)
 
-Officially maintained list of well-known Fluence network nodes. The package is meant to be used in combination with [Fluence JS SDK](https://github.com/fluencelabs/fluence-js).
+Maintained list of well-known Fluence network nodes. The package is meant to be used in combination with [Fluence JS SDK](https://github.com/fluencelabs/fluence-js).
 
 ## Installation
 
@@ -23,32 +23,27 @@ yarn add @fluencelabs/fluence-network-environment
 Pick a node to connect to the Fluence network.
 
 ```typescript
-import { dev } from '@fluencelabs/fluence-network-environment';
+import { testNet } from '@fluencelabs/fluence-network-environment';
 
-export const relayNode = dev[0];
+export const relayNode = testNet[0];
 ```
 
 Which can be used to initialize the Fluence client (see [Fluence JS SDK](https://github.com/fluencelabs/fluence-js).)
 
 ```typescript
-import { createClient } from '@fluencelabs/fluence';
+import { FluencePeer } from '@fluencelabs/fluence';
 
-const client = await createClient(relayNode);
+const peer = new FluencePeer;
+await peer.start({ connectTo: relayNode });
 ```
 
 ## Known networks
 
-### dev
+- stage - unstable network for development tests; low capacity
+- TestNet - more stable network, used for QA of new releases; higher capacity
+- Krasnodar - stable network, has the highest load capacity
 
-**Unstable** Several nodes running on the same physical host. Used a lot to test things out. 
-
-### stage
-
-Environment primarily used for staging deployments of various Fluence services.
-
-### TestNet
-
-The main Fluence network. It consists of a ten nodes each running on a separate physical host.
+All 3 networks are connected, i.e. any node can be discovered from every other. They're open and permissionless, meaning that anyone can use any node for bootstrapping.
 
 
 ## About Fluence
