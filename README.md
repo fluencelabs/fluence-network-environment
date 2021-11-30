@@ -46,18 +46,20 @@ await peer.start({ connectTo: relayNode });
 All 3 networks are connected, i.e. any node can be discovered from every other. They're open and permissionless, meaning that anyone can use any node for bootstrapping.
 
 
-## About Fluence
+## Fluence Stack
 
-Fluence is an open application platform where apps can build on each other, share data and users
+|         Layer         |                                                               Tech                                                               |              Scale              |               State               |                          Based on                          |
+| :-------------------: | :------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------: | :-------------------------------: | :--------------------------------------------------------: |
+|       Execution       |                                            [Marine](https://github.com/fluencelabs/marine)                                             |           Single peer           | Disk, network, external processes | Wasm, [IT](https://github.com/fluencelabs/interface-types), [Wasmer*](https://github.com/fluencelabs/wasmer) |
+|      Composition      |                                     [Aqua](https://github.com/fluencelabs/aqua)                                      |         Involved peers          |      Results and signatures       |                       ⇅, π-calculus                        |
+|       Topology        | [TrustGraph](https://github.com/fluencelabs/fluence/tree/master/trust-graph), [DHT*](https://github.com/fluencelabs/rust-libp2p) | Distributed with Kademlia* algo |    Actual state of the network    |      [libp2p](https://github.com/libp2p/rust-libp2p)       |
+| Security & Accounting |                                                            Blockchain                                                            |          Whole network          |        Licenses & payments        |                         substrate?                         |
 
-|         Layer         |                             Tech                             |              Scale               |               State               |                           Based on                           |
-| :-------------------: | :----------------------------------------------------------: | :------------------------------: | :-------------------------------: | :----------------------------------------------------------: |
-|       Execution       |          [FCE](https://github.com/fluencelabs/fce)           |           Single peer            | Disk, network, external processes | Wasm, [IT](https://github.com/fluencelabs/interface-types), [Wasmer\*](https://github.com/fluencelabs/wasmer) |
-|      Composition      |   [Aquamarine](https://github.com/fluencelabs/aquamarine)    |          Involved peers          |      Results and signatures       |                        ⇅, π-calculus                         |
-|       Topology        | [TrustGraph](https://github.com/fluencelabs/fluence/tree/master/trust-graph), [DHT\*](https://github.com/fluencelabs/rust-libp2p) | Distributed with Kademlia\* algo |    Actual state of the network    |       [libp2p](https://github.com/libp2p/rust-libp2p)        |
-| Security & Accounting |                          Blockchain                          |          Whole network           |        Licenses & payments        |                          substrate?                          |
+<br/>
+
+<p width="100%">
 <img alt="aquamarine scheme" align="center" src="doc/image.png"/>
-
+</p>
 
 
 ## License
