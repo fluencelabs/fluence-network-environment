@@ -33,34 +33,32 @@ Which can be used to initialize the Fluence client (see [Fluence JS SDK](https:/
 ```typescript
 import { FluencePeer } from '@fluencelabs/fluence';
 
-const peer = new FluencePeer;
+const peer = new FluencePeer();
 await peer.start({ connectTo: relayNode });
 ```
 
 ## Known networks
 
-- stage - unstable network for development tests; low capacity
-- TestNet - more stable network, used for QA of new releases; higher capacity
-- Krasnodar - stable network, has the highest load capacity
+-   stage - unstable network for development tests; low capacity
+-   TestNet - more stable network, used for QA of new releases; higher capacity
+-   Kras - stable network, has the highest load capacity
 
 All 3 networks are connected, i.e. any node can be discovered from every other. They're open and permissionless, meaning that anyone can use any node for bootstrapping.
 
-
 ## Fluence Stack
 
-|         Layer         |                                                               Tech                                                               |              Scale              |               State               |                          Based on                          |
-| :-------------------: | :------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------: | :-------------------------------: | :--------------------------------------------------------: |
-|       Execution       |                                            [Marine](https://github.com/fluencelabs/marine)                                             |           Single peer           | Disk, network, external processes | Wasm, [IT](https://github.com/fluencelabs/interface-types), [Wasmer*](https://github.com/fluencelabs/wasmer) |
-|      Composition      |                                     [Aqua](https://github.com/fluencelabs/aqua)                                      |         Involved peers          |      Results and signatures       |                       ⇅, π-calculus                        |
-|       Topology        | [TrustGraph](https://github.com/fluencelabs/fluence/tree/master/trust-graph), [DHT*](https://github.com/fluencelabs/rust-libp2p) | Distributed with Kademlia* algo |    Actual state of the network    |      [libp2p](https://github.com/libp2p/rust-libp2p)       |
-| Security & Accounting |                                                            Blockchain                                                            |          Whole network          |        Licenses & payments        |                         substrate?                         |
+|         Layer         |                                                               Tech                                                                |              Scale               |               State               |                                                   Based on                                                    |
+| :-------------------: | :-------------------------------------------------------------------------------------------------------------------------------: | :------------------------------: | :-------------------------------: | :-----------------------------------------------------------------------------------------------------------: |
+|       Execution       |                                          [Marine](https://github.com/fluencelabs/marine)                                          |           Single peer            | Disk, network, external processes | Wasm, [IT](https://github.com/fluencelabs/interface-types), [Wasmer\*](https://github.com/fluencelabs/wasmer) |
+|      Composition      |                                            [Aqua](https://github.com/fluencelabs/aqua)                                            |          Involved peers          |      Results and signatures       |                                                 ⇅, π-calculus                                                 |
+|       Topology        | [TrustGraph](https://github.com/fluencelabs/fluence/tree/master/trust-graph), [DHT\*](https://github.com/fluencelabs/rust-libp2p) | Distributed with Kademlia\* algo |    Actual state of the network    |                                [libp2p](https://github.com/libp2p/rust-libp2p)                                |
+| Security & Accounting |                                                            Blockchain                                                             |          Whole network           |        Licenses & payments        |                                                  substrate?                                                   |
 
 <br/>
 
 <p width="100%">
 <img alt="aquamarine scheme" align="center" src="doc/image.png"/>
 </p>
-
 
 ## License
 
