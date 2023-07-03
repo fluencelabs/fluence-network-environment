@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/fluencelabs/fluence-network-environment/compare/fluence-network-environment-v1.1.0...fluence-network-environment-v1.1.1) (2023-07-03)
+
+
+### Bug Fixes
+
+* Actually build package ([#9](https://github.com/fluencelabs/fluence-network-environment/issues/9)) ([25ef57e](https://github.com/fluencelabs/fluence-network-environment/commit/25ef57e061d75abaa08d58a4fef89e71d9cfb4da))
+
 ## [1.1.0](https://github.com/fluencelabs/fluence-network-environment/compare/fluence-network-environment-v1.0.14...fluence-network-environment-v1.1.0) (2023-06-19)
 
 
