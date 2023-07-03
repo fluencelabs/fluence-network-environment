@@ -69,6 +69,7 @@ jobs:
           cache: "npm"
 
       - run: npm i
+      - run: npm run build
 
       - name: Publish to npm registry
         run: npm publish --access public
