@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/fluencelabs/fluence-network-environment/compare/fluence-network-environment-v1.1.1...fluence-network-environment-v1.1.2) (2023-07-05)
+
+
+### Bug Fixes
+
+* Update DNS records after kras migration to Nomad ([#11](https://github.com/fluencelabs/fluence-network-environment/issues/11)) ([446df4f](https://github.com/fluencelabs/fluence-network-environment/commit/446df4f5eaa64d8d5b803e23f73b8cf8e4331d2e))
+
 ## [1.1.1](https://github.com/fluencelabs/fluence-network-environment/compare/fluence-network-environment-v1.1.0...fluence-network-environment-v1.1.1) (2023-07-03)
 
 
