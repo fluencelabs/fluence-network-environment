@@ -52,26 +52,6 @@ export const testNet: Node[] = [
         multiaddr: '/dns4/5-testnet.fluence.dev/tcp/9000/wss/p2p/12D3KooWCKCeqLPSgMnDjyFsJuWqREDtKNHx1JEBiwaMXhCLNTRb',
         peerId: '12D3KooWCKCeqLPSgMnDjyFsJuWqREDtKNHx1JEBiwaMXhCLNTRb',
     },
-    {
-        multiaddr: '/dns4/6-testnet.fluence.dev/tcp/9000/wss/p2p/12D3KooWKnRcsTpYx9axkJ6d69LPfpPXrkVLe96skuPTAo76LLVH',
-        peerId: '12D3KooWKnRcsTpYx9axkJ6d69LPfpPXrkVLe96skuPTAo76LLVH',
-    },
-    {
-        multiaddr: '/dns4/7-testnet.fluence.dev/tcp/9000/wss/p2p/12D3KooWBSdm6TkqnEFrgBuSkpVE3dR1kr6952DsWQRNwJZjFZBv',
-        peerId: '12D3KooWBSdm6TkqnEFrgBuSkpVE3dR1kr6952DsWQRNwJZjFZBv',
-    },
-    {
-        multiaddr: '/dns4/8-testnet.fluence.dev/tcp/9000/wss/p2p/12D3KooWGzNvhSDsgFoHwpWHAyPf1kcTYCGeRBPfznL8J6qdyu2H',
-        peerId: '12D3KooWGzNvhSDsgFoHwpWHAyPf1kcTYCGeRBPfznL8J6qdyu2H',
-    },
-    {
-        multiaddr: '/dns4/9-testnet.fluence.dev/tcp/9000/wss/p2p/12D3KooWF7gjXhQ4LaKj6j7ntxsPpGk34psdQicN2KNfBi9bFKXg',
-        peerId: '12D3KooWF7gjXhQ4LaKj6j7ntxsPpGk34psdQicN2KNfBi9bFKXg',
-    },
-    {
-        multiaddr: '/dns4/10-testnet.fluence.dev/tcp/9000/wss/p2p/12D3KooWB9P1xmV3c7ZPpBemovbwCiRRTKd3Kq2jsVPQN4ZukDfy',
-        peerId: '12D3KooWB9P1xmV3c7ZPpBemovbwCiRRTKd3Kq2jsVPQN4ZukDfy',
-    },
 ];
 
 export const kras: Node[] = [
