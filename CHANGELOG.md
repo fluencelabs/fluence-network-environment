@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/fluencelabs/fluence-network-environment/compare/fluence-network-environment-v1.1.2...fluence-network-environment-v1.2.0) (2024-04-01)
+
+
+### Features
+
+* update dar relays ([#13](https://github.com/fluencelabs/fluence-network-environment/issues/13)) ([43d2298](https://github.com/fluencelabs/fluence-network-environment/commit/43d2298a4f53b84fa17e83eed5a14e07d6431f75))
+
 ## [1.1.2](https://github.com/fluencelabs/fluence-network-environment/compare/fluence-network-environment-v1.1.1...fluence-network-environment-v1.1.2) (2023-07-05)
 
 
