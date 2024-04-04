@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/fluencelabs/fluence-network-environment/compare/fluence-network-environment-v1.2.0...fluence-network-environment-v1.2.1) (2024-04-04)
+
+
+### Bug Fixes
+
+* **dar:** update multiaddrs ([#15](https://github.com/fluencelabs/fluence-network-environment/issues/15)) ([e730efc](https://github.com/fluencelabs/fluence-network-environment/commit/e730efc6e0586af09b8160a726b62436d2076c9e))
+
 ## [1.2.0](https://github.com/fluencelabs/fluence-network-environment/compare/fluence-network-environment-v1.1.2...fluence-network-environment-v1.2.0) (2024-04-01)
 
 
