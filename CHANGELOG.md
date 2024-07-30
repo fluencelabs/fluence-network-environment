@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.2](https://github.com/fluencelabs/fluence-network-environment/compare/fluence-network-environment-v1.2.1...fluence-network-environment-v1.2.2) (2024-07-30)
+
+
+### Bug Fixes
+
+* **stage:** keep only a single stage seed peer ([1924f49](https://github.com/fluencelabs/fluence-network-environment/commit/1924f49833c1f52bf0c8bb2e414778a5af8965c3))
+
 ## [1.2.1](https://github.com/fluencelabs/fluence-network-environment/compare/fluence-network-environment-v1.2.0...fluence-network-environment-v1.2.1) (2024-04-04)
 
 
