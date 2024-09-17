@@ -25,7 +25,7 @@ Pick a node to connect to the Fluence network.
 ```typescript
 import { testNet } from '@fluencelabs/fluence-network-environment';
 
-export const relayNode = testNet[0];
+export const relayNode = testNet[1];
 ```
 
 Which can be used to initialize the Fluence client (see [Fluence JS SDK](https://github.com/fluencelabs/fluence-js).)
